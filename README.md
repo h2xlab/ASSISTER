@@ -51,9 +51,9 @@ annotation{
   
 ## Results  
 <p>
-    <img width=900 alt="Demo 1" src="images/demo.gif"/ class="center>
+    <img width=900 alt="Demo 1" src="images/demo.gif"/ class="center">  
 </p>  
-
+  
 ## Contact us  
 Please don't hesitate to contact us if you have any remarks or questions at sgzk@bu.edu.  
 
