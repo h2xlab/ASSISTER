@@ -51,7 +51,7 @@ annotation{
   
 ## Results  
 <p>
-    <img alt="Example 1" src="images/demo.gif" class="fit"/>
+    <img width=600 alt="Demo 1" src="images/demo.gif"/>
 </p>  
 
 ## Contact us  
