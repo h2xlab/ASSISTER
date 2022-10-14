@@ -11,3 +11,6 @@ This repository contains the dataset and code (avaliable soon) that accompanies 
 
 ### Overview
 There're 399,126 samples for training, 36,615 samples for new town new weather, 36,378 samples for new town same weather, and 30,876 samples for same town same weather.
+
+### Data Format
+We provide .json file which is very similar to coco format.
