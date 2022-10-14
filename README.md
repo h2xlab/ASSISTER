@@ -49,7 +49,7 @@ annotation{
 }  
 ```  
   
-## Results  
+## Demo    
 <p>
     <img width=900 class="center" alt="Demo 1" src="images/demo.gif"/ >  
 </p>  
