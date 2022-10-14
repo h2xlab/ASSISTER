@@ -1,5 +1,5 @@
 # ASSISTER: Assistive Navigation via Conditional Instruction Generation
-This repository contains the dataset and code (avaliable soon) that accompanies our ECCV 2022 paper [ASSISTER: Assistive Navigation via Conditional Instruction Generation](Link).  
+This repository contains the dataset and code (avaliable soon) that accompanies our ECCV 2022 paper [ASSISTER: Assistive Navigation via Conditional Instruction Generation](https://eshed1.github.io/papers/assister_eccv2022.pdf).  
 
 <p>
     <img alt="Example 1" src="images/example.PNG" class="fit"/>
