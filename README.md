@@ -23,29 +23,29 @@ We provide train.json file contains all information need for training. Note that
    
 ```  
 {    
-"info"         : [info],    
-"images"       : [image],    
-"annotations"  : [annotation],    
-"licenses"     : str,    
-"type"         : str,    
+  "info"         : [info],    
+  "images"       : [image],    
+  "annotations"  : [annotation],    
+  "licenses"     : str,    
+  "type"         : str,    
 }     
     
 info{    
-"year"         : int, 
-"version"      : str, 
-"description"  : str,    
+  "year"         : int, 
+  "version"      : str, 
+  "description"  : str,    
 }    
     
 image{  
-"id"           : int,    
-"file_name"    : str,   
-"goal"         : [float, float],  
+  "id"           : int,    
+  "file_name"    : str,   
+  "goal"         : [float, float],  
 }    
     
-"annotation"{  
-"id"           : int,  
-"image_id"     : int,  
-"caption"      : str,  
+annotation{  
+  "id"           : int,  
+  "image_id"     : int,  
+  "caption"      : str,  
 }  
 ```  
   
