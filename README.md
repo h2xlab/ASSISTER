@@ -20,33 +20,35 @@ There're 399,126 samples for training, 36,615 samples for new town new weather, 
 
 ### Data Format
 We provide train.json file contains all information need for training. Note that the json file is very similar to coco format but not identical.  
-  
-```
+   
+```  
 {    
-"info": [info],    
-"images": [image],    
-"annotations": [annotation],    
-"licenses": str,    
-"type": str,    
+"info"         : [info],    
+"images"       : [image],    
+"annotations"  : [annotation],    
+"licenses"     : str,    
+"type"         : str,    
 }     
     
 info{    
-"year": int, "version": str, "description": str,    
+"year"         : int, 
+"version"      : str, 
+"description"  : str,    
 }    
     
 image{  
-"id": int,    
-"file_name": str,   
-"goal": [float, float],  
+"id"           : int,    
+"file_name"    : str,   
+"goal"         : [float, float],  
 }    
     
 "annotation"{  
-"id": int,  
-"image_id": int,  
-"caption": str,  
+"id"           : int,  
+"image_id"     : int,  
+"caption"      : str,  
 }  
-```
-
+```  
+  
 ## Contact us  
 Please don't hesitate to contact us if you have any remarks or questions at sgzk@bu.edu.  
 
