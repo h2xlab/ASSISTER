@@ -13,10 +13,10 @@ This repository contains the dataset and code (avaliable soon) that accompanies 
 
 ## Simulation Dataset  
 We provide the [[Training](https://drive.google.com/drive/folders/1mME0GCE_WDm8yP13zk2-LcuXUETwh5Ii?usp=sharing)] and 
-[[Testing](https://drive.google.com/drive/folders/1jHpYJfEYXAG4LjabB425REFjVyTbUu6R?usp=sharing)].     
+[[Testing](https://drive.google.com/drive/folders/1jHpYJfEYXAG4LjabB425REFjVyTbUu6R?usp=sharing)] dataset.     
 
 ### Overview  
-Our dataset contains 399,126 samples for training and 103,869 samples for testing. Among the testing samples, 36,615 samples are *new town new weather* (ntnw) setting, 36,378 are *new town same weather* (ntsw) setting, and 30,876 samples are *same town same weather* (stsw) setting.
+Our simulation dataset contains 399,126 samples for training and 103,869 samples for testing. Among the testing samples, 36,615 samples are *new town new weather* (ntnw) setting, 36,378 are *new town same weather* (ntsw) setting, and 30,876 samples are *same town same weather* (stsw) setting.
 
 ### Data Format  
 We provide train.json file contains all information need for training. Note that the json file is very similar to coco format but not identical.  
@@ -51,6 +51,10 @@ annotation{
   
 ## Contact us  
 Please don't hesitate to contact us if you have any remarks or questions at sgzk@bu.edu.  
+
+## License
+Our work is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa]..
 
 ## ToDos
 - [ ] Initial code release
