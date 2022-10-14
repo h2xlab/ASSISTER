@@ -16,7 +16,7 @@ We provide the [[Training](https://drive.google.com/drive/folders/1mME0GCE_WDm8y
 [[Testing](https://drive.google.com/drive/folders/1jHpYJfEYXAG4LjabB425REFjVyTbUu6R?usp=sharing)] dataset.     
 
 ### Overview  
-Our simulation dataset contains 399,126 samples for training and 103,869 samples for testing. Among the testing samples, 36,615 samples are *new town new weather* (ntnw) setting, 36,378 are *new town same weather* (ntsw) setting, and 30,876 samples are *same town same weather* (stsw) setting.
+Our simulation dataset is collected using [CARLA](https://github.com/carla-simulator/carla). While [CARLA](https://github.com/carla-simulator/carla) is typically used for development of autonomous driving policies, we modify the environment to collect instructional guidance and a sidewalk pedestrian perspective in various weathers and towns. Overall, our simulation dataset contains 399,126 samples for training and 103,869 samples for testing. Among the testing samples, 36,615 samples are *new town new weather* (ntnw) setting, 36,378 are *new town same weather* (ntsw) setting, and 30,876 samples are *same town same weather* (stsw) setting.
 
 ### Data Format  
 We provide train.json file contains all information need for training. Note that the json file is very similar to coco format but not identical.  
