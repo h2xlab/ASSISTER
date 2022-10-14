@@ -49,6 +49,11 @@ annotation{
 }  
 ```  
   
+## Results  
+<p>
+    <img alt="Example 1" src="images/demo.gif" class="fit"/>
+</p>  
+
 ## Contact us  
 Please don't hesitate to contact us if you have any remarks or questions at sgzk@bu.edu.  
 
