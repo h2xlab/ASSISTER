@@ -54,8 +54,8 @@ annotation{
     <img width=900 class="center" alt="Demo 1" src="images/demo.gif"/ >  
 </p>  
   
-## Contact us  
-Please don't hesitate to contact us if you have any remarks or questions at sgzk@bu.edu.  
+## Contact  
+Please contact us if you have any remarks or questions at sgzk@bu.edu.  
 
 ## License  
 Our work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].  
