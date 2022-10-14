@@ -48,4 +48,7 @@ image{
 ```
 
 ## Contact us  
+Please don't hesitate to contact us if you have any remarks or questions at sgzk@bu.edu.  
+
+
 
