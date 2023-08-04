@@ -1,0 +1,14 @@
+_BASE_: "../Base-RCNN-C4.yaml"
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  MASK_ON: False
+  RESNETS:
+    DEPTH: 50
+  ROI_BOX_HEAD:
+    RES5HALVE: False
+    POOLER_TYPE: "ROIPool"
+    ATTR: True
+    NUM_ATTRS: 80
+SOLVER:
+  STEPS: (210000, 250000)
+  MAX_ITER: 270000
