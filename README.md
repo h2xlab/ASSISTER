@@ -61,6 +61,6 @@ Please contact us if you have any remarks or questions at sgzk@bu.edu.
 Our work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].  
 
 ## ToDos  
-- [ ] Initial code release
+- [ ] Code release
 - [ ] Real-world dataset release
 
