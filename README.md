@@ -63,14 +63,13 @@ To train the image captioning model, you can use the following command:
 ```
 python oscar/run_captioning.py --model_name_or_path your_model_path --do_train --do_lower_case --evaluate_during_training --add_od_labels --learning_rate 0.00003 --per_gpu_train_batch_size 16 --num_train_epochs 500 --save_steps 2000 --output_dir your_output_directory --train_yaml train_config_file_path --data_dir dataset_path --val_yaml val_config_file_path --max_seq_length 90 --max_gen_length 40
 ```
-Make sure to replace the following placeholders with your specific information:
-
-your_model_path: Replace with the path to your model.
-your_output_directory: Replace with the directory where you want to save the model output.
-train_config_file_path: Replace with the path to your train configuration file.
-dataset_path: Replace with the path to your dataset.
-val_config_file_path: Replace with the path to your validation configuration file.
-Adjust the other parameters as needed to suit your training requirements.
+Make sure to replace the following placeholders with your specific information:  
+your_model_path: Replace with the path to your model.  
+your_output_directory: Replace with the directory where you want to save the model output.  
+train_config_file_path: Replace with the path to your train configuration file.  
+dataset_path: Replace with the path to your dataset.  
+val_config_file_path: Replace with the path to your validation configuration file.  
+Adjust the other parameters as needed to suit your training requirements.  
 
 ## Contact  
 Please contact us if you have any remarks or questions at sgzk@bu.edu.  
