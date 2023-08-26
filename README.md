@@ -54,6 +54,28 @@ annotation{
     <img width=900 class="center" alt="Demo 1" src="images/demo.gif"/ >  
 </p>  
 
+## Environment Setup
+To run the code, you will need to install [py-bottom-up-attention](https://github.com/airsplay/py-bottom-up-attention/tree/master) and [Oscar](https://github.com/microsoft/Oscar).
+### Installation
+```
+# Install py-bottom-up-attention
+git clone https://github.com/airsplay/py-bottom-up-attention.git
+cd py-bottom-up-attention
+pip install -r requirements.txt
+pip install 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
+
+# Install detectron2
+python setup.py build develop
+
+# install Oscar
+git clone --recursive git@github.com:microsoft/Oscar.git
+cd Oscar/coco_caption
+./get_stanford_models.sh
+cd ..
+python setup.py build develop
+pip install -r requirements.txt
+```
+
 ## Training
 The training process includes two stages: extracting features from images and training an image captioning model.
 ### Extract Features from Images
