@@ -76,23 +76,29 @@ python setup.py build develop
 pip install -r requirements.txt
 ```
 
-## Training
+## Training and Inference
 The training process includes two stages: extracting features from images and training an image captioning model.
 ### Extract Features from Images
 To extract features from images, please refer to the [**ASSISTER/py-bottom-up-attention/demo/extract_feature_sim.ipynb**](ASSISTER/py-bottom-up-attention/demo/extract_feature_sim.ipynb) notebook. This notebook is specifically designed to work with our simulation dataset.
 ### Training an Image Captioning Model
 To train the image captioning model, you can use the following command:
 ```
-python oscar/run_captioning.py --model_name_or_path your_model_path --do_train --do_lower_case --evaluate_during_training --add_od_labels --learning_rate 0.00003 --per_gpu_train_batch_size 16 --num_train_epochs 500 --save_steps 2000 --output_dir your_output_directory --train_yaml train_config_file_path --data_dir dataset_path --val_yaml val_config_file_path --max_seq_length 90 --max_gen_length 40
+python oscar/run_captioning.py --model_name_or_path pretrained_language_model_path --do_train --do_lower_case --evaluate_during_training --add_od_labels --learning_rate 0.00003 --per_gpu_train_batch_size 16 --num_train_epochs 500 --save_steps 2000 --output_dir your_output_directory --train_yaml train_config_file_path --data_dir dataset_path --val_yaml val_config_file_path --max_seq_length 90 --max_gen_length 40
 ```
+You can download the pretrained language models from [Oscar Pre-trained Models](https://github.com/microsoft/Oscar/blob/master/DOWNLOAD.md)  
 Make sure to replace the following placeholders with your specific information:  
 - **your_model_path**: Replace this with the path to your pre-trained model.  
 - **your_output_directory**: Set the directory where you want to save the model output and training results.  
 - **train_config_file_path**: Provide the path to your train configuration file.  
 - **dataset_path**: Specify the path to your dataset directory.  
-- **val_config_file_path**: Enter the path to your validation configuration file.  
- 
+- **val_config_file_path**: Enter the path to your validation configuration file.   
 Adjust the other parameters (e.g., learning_rate, batch_size) as needed to suit your training requirements.  
+### Inference
+After successfully training and saving your model, you can perform inference and evaluate it on a testing dataset using the following command:
+```
+python oscar/run_captioning.py --do_test --test_yaml test_config_file_path --per_gpu_eval_batch_size 16 --num_beams 4 --max_gen_length 30 --eval_model_dir your_model_path
+```
+
 
 ## Contact  
 Please contact us if you have any remarks or questions at sgzk@bu.edu.  
