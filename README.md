@@ -59,7 +59,6 @@ To run the code, you will need to install [py-bottom-up-attention](https://githu
 ### Installation
 ```
 # Install py-bottom-up-attention
-git clone https://github.com/airsplay/py-bottom-up-attention.git
 cd py-bottom-up-attention
 pip install -r requirements.txt
 pip install 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
@@ -68,19 +67,19 @@ pip install 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonA
 python setup.py build develop
 
 # install Oscar
-git clone --recursive git@github.com:microsoft/Oscar.git
 cd Oscar/coco_caption
 ./get_stanford_models.sh
 cd ..
 python setup.py build develop
 pip install -r requirements.txt
 ```
+Note: We have made some modifications to the original repository. Please use our repository instead of cloning from the original one to ensure compatibility with our custom changes and configurations. 
 
 ## Training and Inference
 The training process includes two stages: extracting features from images and training an image captioning model.
 ### Extract Features from Images
 To extract features from images, please refer to the [**ASSISTER/py-bottom-up-attention/demo/extract_feature_sim.ipynb**](ASSISTER/py-bottom-up-attention/demo/extract_feature_sim.ipynb) notebook. This notebook is designed to work with our simulation dataset.
-### Training an Image Captioning Model
+### Training an Conditional Instruction Generation Model
 To train the image captioning model, you can use the following command:
 ```
 python oscar/run_captioning.py --model_name_or_path pretrained_language_model_path --do_train --do_lower_case --evaluate_during_training --add_od_labels --learning_rate 0.00003 --per_gpu_train_batch_size 16 --num_train_epochs 500 --save_steps 2000 --output_dir your_output_directory --train_yaml train_config_file_path --data_dir dataset_path --val_yaml val_config_file_path --max_seq_length 90 --max_gen_length 40
