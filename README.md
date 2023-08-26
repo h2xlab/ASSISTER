@@ -79,7 +79,7 @@ pip install -r requirements.txt
 ## Training and Inference
 The training process includes two stages: extracting features from images and training an image captioning model.
 ### Extract Features from Images
-To extract features from images, please refer to the [**ASSISTER/py-bottom-up-attention/demo/extract_feature_sim.ipynb**](ASSISTER/py-bottom-up-attention/demo/extract_feature_sim.ipynb) notebook. This notebook is specifically designed to work with our simulation dataset.
+To extract features from images, please refer to the [**ASSISTER/py-bottom-up-attention/demo/extract_feature_sim.ipynb**](ASSISTER/py-bottom-up-attention/demo/extract_feature_sim.ipynb) notebook. This notebook is designed to work with our simulation dataset.
 ### Training an Image Captioning Model
 To train the image captioning model, you can use the following command:
 ```
